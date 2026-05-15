@@ -250,12 +250,12 @@ export function SideBar(props: { className?: string }) {
       {...props}
     >
       <SideBarHeader
-        title="NextChat"
-        subTitle="Build your own AI assistant."
+        title="Chỉ dành cho Hồ Thảo"
+        subTitle="Em học tốt "
         logo={<ChatGptIcon />}
         shouldNarrow={shouldNarrow}
       >
-        <div className={styles["sidebar-header-bar"]}>
+        {/* <div className={styles["sidebar-header-bar"]}>
           <IconButton
             icon={<MaskIcon />}
             text={shouldNarrow ? undefined : Locale.Mask.Name}
@@ -287,7 +287,7 @@ export function SideBar(props: { className?: string }) {
             onClick={() => setshowDiscoverySelector(true)}
             shadow
           />
-        </div>
+        </div> */}
         {showDiscoverySelector && (
           <Selector
             items={[
